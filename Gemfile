@@ -54,3 +54,7 @@ group :development, :test do
   gem 'rubycritic', require: false
   gem 'pry-byebug'
 end
+
+group :test do
+  gem 'cucumber-rails', require: false
+end
