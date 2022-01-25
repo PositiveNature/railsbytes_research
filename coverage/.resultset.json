@@ -1,0 +1,155 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/bogdanchil/Projects/2022/playground/railsbytes_research/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/bogdanchil/Projects/2022/playground/railsbytes_research/app/helpers/scaffold_resources_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/bogdanchil/Projects/2022/playground/railsbytes_research/app/models/scaffold_resource.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/bogdanchil/Projects/2022/playground/railsbytes_research/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/home/bogdanchil/Projects/2022/playground/railsbytes_research/app/controllers/scaffold_resources_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/bogdanchil/Projects/2022/playground/railsbytes_research/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/home/bogdanchil/Projects/2022/playground/railsbytes_research/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/bogdanchil/Projects/2022/playground/railsbytes_research/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/bogdanchil/Projects/2022/playground/railsbytes_research/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/home/bogdanchil/Projects/2022/playground/railsbytes_research/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      }
+    },
+    "timestamp": 1643078554
+  }
+}
