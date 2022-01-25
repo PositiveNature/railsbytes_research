@@ -17,11 +17,13 @@ RSpec.describe "/scaffold_resources", type: :request do
   # ScaffoldResource. As you add validations to ScaffoldResource, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    # skip("Add a hash of attributes valid for your model")
+    FactoryBot.build(:scaffold_resource).attributes
   }
 
   let(:invalid_attributes) {
     skip("Add a hash of attributes invalid for your model")
+    # FactoryBot.build(:scaffold_resource, name: '', description: '').attributes
   }
 
   describe "GET /index" do

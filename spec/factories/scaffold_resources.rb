@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :scaffold_resource do
-    name { "MyString" }
-    description { "MyText" }
+    name { "Name #{SecureRandom.uuid}" }
+    description { "Description #{SecureRandom.uuid}" }
   end
 end
