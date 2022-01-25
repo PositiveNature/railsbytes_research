@@ -1,0 +1,2 @@
+module ScaffoldResourcesHelper
+end

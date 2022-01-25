@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @scaffold_resource.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @scaffold_resource.description %>
+</p>
+
+<%= link_to 'Edit', edit_scaffold_resource_path(@scaffold_resource) %> |
+<%= link_to 'Back', scaffold_resources_path %>
