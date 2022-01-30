@@ -26,14 +26,14 @@ RSpec.describe "/scaffold_resources", type: :request do
     # FactoryBot.build(:scaffold_resource, name: '', description: '').attributes
   }
 
-  describe "GET /index" do
-    it "renders a successful response" do
-      ScaffoldResource.create! valid_attributes
-      get scaffold_resources_url
-      expect(response).to be_successful
-    end
-  end
-
+  # describe "GET /index" do
+  #   it "renders a successful response" do
+  #     ScaffoldResource.create! valid_attributes
+  #     get scaffold_resources_url
+  #     expect(response).to be_successful
+  #   end
+  # end
+  #
   describe "GET /show" do
     it "renders a successful response" do
       scaffold_resource = ScaffoldResource.create! valid_attributes
@@ -42,12 +42,12 @@ RSpec.describe "/scaffold_resources", type: :request do
     end
   end
 
-  describe "GET /new" do
-    it "renders a successful response" do
-      get new_scaffold_resource_url
-      expect(response).to be_successful
-    end
-  end
+  # describe "GET /new" do
+  #   it "renders a successful response" do
+  #     get new_scaffold_resource_url
+  #     expect(response).to be_successful
+  #   end
+  # end
 
   describe "GET /edit" do
     it "render a successful response" do

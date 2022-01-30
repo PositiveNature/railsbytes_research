@@ -47,7 +47,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'simplecov'
+  gem 'simplecov', '0.17'
   gem 'factory_bot_rails'
   gem 'database_cleaner-active_record'
   gem 'rubocop-rails', require: false
