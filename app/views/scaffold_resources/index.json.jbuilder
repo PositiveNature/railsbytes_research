@@ -1,1 +1,3 @@
-json.array! @scaffold_resources, partial: "scaffold_resources/scaffold_resource", as: :scaffold_resource
+# frozen_string_literal: true
+
+json.array! @scaffold_resources, partial: 'scaffold_resources/scaffold_resource', as: :scaffold_resource

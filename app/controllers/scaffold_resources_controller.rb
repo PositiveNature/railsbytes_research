@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class ScaffoldResourcesController < ApplicationController
-  before_action :set_scaffold_resource, only: %i[ show edit update destroy ]
+  before_action :set_scaffold_resource, only: %i[show edit update destroy]
 
   # GET /scaffold_resources or /scaffold_resources.json
   def index
@@ -7,8 +9,7 @@ class ScaffoldResourcesController < ApplicationController
   end
 
   # GET /scaffold_resources/1 or /scaffold_resources/1.json
-  def show
-  end
+  def show; end
 
   # GET /scaffold_resources/new
   def new
@@ -16,8 +17,7 @@ class ScaffoldResourcesController < ApplicationController
   end
 
   # GET /scaffold_resources/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /scaffold_resources or /scaffold_resources.json
   def create
@@ -25,7 +25,9 @@ class ScaffoldResourcesController < ApplicationController
 
     respond_to do |format|
       if @scaffold_resource.save
-        format.html { redirect_to scaffold_resource_url(@scaffold_resource), notice: "Scaffold resource was successfully created." }
+        format.html do
+          redirect_to scaffold_resource_url(@scaffold_resource), notice: 'Scaffold resource was successfully created.'
+        end
         format.json { render :show, status: :created, location: @scaffold_resource }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +40,9 @@ class ScaffoldResourcesController < ApplicationController
   def update
     respond_to do |format|
       if @scaffold_resource.update(scaffold_resource_params)
-        format.html { redirect_to scaffold_resource_url(@scaffold_resource), notice: "Scaffold resource was successfully updated." }
+        format.html do
+          redirect_to scaffold_resource_url(@scaffold_resource), notice: 'Scaffold resource was successfully updated.'
+        end
         format.json { render :show, status: :ok, location: @scaffold_resource }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,19 +56,20 @@ class ScaffoldResourcesController < ApplicationController
     @scaffold_resource.destroy
 
     respond_to do |format|
-      format.html { redirect_to scaffold_resources_url, notice: "Scaffold resource was successfully destroyed." }
+      format.html { redirect_to scaffold_resources_url, notice: 'Scaffold resource was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_scaffold_resource
-      @scaffold_resource = ScaffoldResource.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def scaffold_resource_params
-      params.require(:scaffold_resource).permit(:name, :description)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_scaffold_resource
+    @scaffold_resource = ScaffoldResource.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def scaffold_resource_params
+    params.require(:scaffold_resource).permit(:name, :description)
+  end
 end
